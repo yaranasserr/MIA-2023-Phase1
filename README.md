@@ -21,7 +21,8 @@ Task 3 involved working with Arduino and embedded systems. I gained hands-on exp
 
 In this task, I expanded my programming skills to Python, focusing on object-oriented programming. Additionally, I delved into machine learning and implemented a linear regression model, demonstrating my understanding of data analysis and predictive modeling.
 
-
+### Task 5: Linux Basics 
+In this tasks I worked on Ubuntu to create directory , text file , add text , run python script
 ## How to Use
 
 If you're interested in any of the tasks, navigate to the respective directories and find detailed instructions, code samples, and documentation for each topic.
