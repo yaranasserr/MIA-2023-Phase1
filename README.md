@@ -23,6 +23,8 @@ To count the number of rotations using a rotary encoder, follow these steps:
 4. Observe the phase relationship between the signals to determine the direction of rotation:
    - If A leads B, it's clockwise rotation.
    - If B leads A, it's counterclockwise rotation.
+![Rotary Encoder]<img width="413" alt="image" src="https://github.com/yaranasserr/MIA-2023-Phase1/assets/72654303/d7b953bb-d191-4490-a6e1-727320ed2ab5">
+
 # Cutoff Frequency of Software Practical Low Pass Filter (LPF)  for Motor Encoder with specific parameters.
 
 ## Parameters
