@@ -23,6 +23,49 @@ To count the number of rotations using a rotary encoder, follow these steps:
 4. Observe the phase relationship between the signals to determine the direction of rotation:
    - If A leads B, it's clockwise rotation.
    - If B leads A, it's counterclockwise rotation.
+
+## Ardiuno Code 
+```
+#define PinA 6
+#define PinB 7
+long long counter = 0;
+
+void setup() {
+  // Encoders setup
+  pinMode(PinA, INPUT_PULLUP);
+  pinMode(PinB, INPUT_PULLUP);
+
+  attachInterrupt(digitalPinToInterrupt(PinA), ISR_encoderPinA, CHANGE);
+  attachInterrupt(digitalPinToInterrupt(PinB), ISR_encoderPinB, CHANGE);
+
+  // Initialize serial communication
+  Serial.begin(9600);
+}
+
+void loop() {
+  // Print the counter value to the serial monitor
+  Serial.print("Counter: ");
+  Serial.println(counter);
+
+  // Add a delay to reduce the rate of serial output
+  delay(1000);
+}
+
+void ISR_encoderPinA() {
+  if (digitalRead(PinB) != digitalRead(PinA))
+    counter++;
+  else
+    counter--;
+}
+
+void ISR_encoderPinB() {
+  if (digitalRead(PinA) == digitalRead(PinB))
+    counter--;
+  else
+    counter++;
+}
+```
+
 <div align="center">
    <img width="339" alt="image" src="https://github.com/yaranasserr/MIA-2023-Phase1/assets/72654303/769e2570-dc45-4bed-8039-7f79d54d4dee">
 </div>
