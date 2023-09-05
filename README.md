@@ -1,29 +1,34 @@
-# MIA-2023-Phase1
-# Project Tasks Overview
+# MIA-2023-Phase2
+# Motor Encoder Calculation
 
-This repository contains the code and materials related to different tasks I've worked on. Each task focuses on a specific topic and involves different programming languages and concepts.
+This README provides calculations for determining the rotation per second (RPS) and pulse per second (PPS) for a motor encoder with specific parameters.
 
-## Tasks
+## Parameters
 
-### Task 1: Programming in C
+- Pulse per rotation (PPR) = 540
+- Wheel radius (R) = 0.2 meters
+- Max speed (V) = 0.5 meters per second
 
-In this task, I explored programming in C. I practiced writing C programs to understand core concepts such as variables, control structures, functions, and memory management.
+## Calculation
 
-### Task 2: Circuits and Hardware
+To calculate the rotation per second (RPS) and pulse per second (PPS), we'll use the following equations:
 
-For this task, I delved into circuits and hardware design. I learned about electronic components, circuit diagrams, and basic hardware interactions.
+1. Calculate the rotation per second (RPS):RPS = Max Speed / (2 * π * Wheel Radius)
+RPS = 0.5 m/s / (2 * π * 0.2 m)
+RPS ≈ 0.3979 rotations per second
 
-### Task 3: Arduino and Embedded Systems
+2. Calculate the pulse per second (PPS):
 
-Task 3 involved working with Arduino and embedded systems. I gained hands-on experience in programming microcontrollers, interfacing sensors and actuators, and building simple embedded projects.
+PPS = 0.3979 RPS * 540 PPR
+PPS ≈ 214.626 pulses per second
+## Results
 
-### Task 4: OOP in Python, Machine Learning, and Linear Regression
+For a motor encoder with the specified parameters:
 
-In this task, I expanded my programming skills to Python, focusing on object-oriented programming. Additionally, I delved into machine learning and implemented a linear regression model, demonstrating my understanding of data analysis and predictive modeling.
+- Rotation per second (RPS) ≈ 0.3979 rotations per second
+- Pulse per second (PPS) ≈ 214.626 pulses per second
 
-### Task 5: Linux Basics 
-In this tasks I worked on Ubuntu to create directory , text file , add text , run python script
-## How to Use
+Assume that the Pulse per second= cutoff frequency 
+## CutOff Frequency = 214.626 Hz
 
-If you're interested in any of the tasks, navigate to the respective directories and find detailed instructions, code samples, and documentation for each topic.
 
