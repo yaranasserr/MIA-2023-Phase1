@@ -23,7 +23,7 @@ To count the number of rotations using a rotary encoder, follow these steps:
 4. Observe the phase relationship between the signals to determine the direction of rotation:
    - If A leads B, it's clockwise rotation.
    - If B leads A, it's counterclockwise rotation.
-# Calculations for determining the rotation per second (RPS) and pulse per second (PPS) for a motor encoder with specific parameters.
+# Cutoff Frequency of Software Practical Low Pass Filter (LPF)  for Motor Encoder with specific parameters.
 
 ## Parameters
 
