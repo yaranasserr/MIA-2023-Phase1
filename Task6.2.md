@@ -26,6 +26,8 @@ To count the number of rotations using a rotary encoder, follow these steps:
 <div align="center">
    <img width="339" alt="image" src="https://github.com/yaranasserr/MIA-2023-Phase1/assets/72654303/769e2570-dc45-4bed-8039-7f79d54d4dee">
 </div>
+
+# Arduino code 
 # Cutoff Frequency of Software Practical Low Pass Filter (LPF)  for Motor Encoder with specific parameters.
 
 
