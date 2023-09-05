@@ -1,4 +1,5 @@
 # MIA-2023-Phase2
+## Task 6.2
 # Motor Encoder Calculation
 
 This README provides calculations for determining the rotation per second (RPS) and pulse per second (PPS) for a motor encoder with specific parameters.
